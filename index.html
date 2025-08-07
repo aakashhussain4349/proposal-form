@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Submission Form</title>
+</head>
+<body style="margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #e6f2fa; min-height: 100vh;">
+    
+    <!-- Download Button -->
+    <div style="text-align: center; margin-bottom: 30px;">
+        <button style="background-color: #00aacc; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            Download Proposal Form
+            <span style="background-color: white; border-radius: 50%; width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center;">
+                <span style="color: #00aacc; font-size: 12px;">↓</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Main Form Container -->
+    <div style="background-color: #f5faff; border-radius: 8px; padding: 30px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        
+        <!-- Section Title -->
+        <h2 style="margin: 0 0 25px 0; color: #333; font-size: 20px; font-weight: bold;">Option 1: Quick Submission</h2>
+        
+        <!-- Form with Email Submission using Formspree (works when hosted) -->
+        <form action="https://formspree.io/f/mqalgakl" method="post" enctype="multipart/form-data" style="margin: 0;">
+            
+            <!-- Upload Proposal Field -->
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">
+                    Upload Proposal: <span style="color: red;">*</span>
+                </label>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <input type="file" name="proposal_file" accept=".pdf,.doc,.docx,.txt,.rtf" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; background-color: white; font-size: 14px; cursor: pointer;">
+                </div>
+                <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Accepted formats: PDF, DOC, DOCX, TXT, RTF (Max 10MB)</p>
+            </div>
+            
+            <!-- Email Address Field -->
+            <div style="margin-bottom: 25px;">
+                <label style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">
+                    Email Address: <span style="color: red;">*</span>
+                </label>
+                <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; background-color: white; font-size: 14px; box-sizing: border-box;">
+                <p style="margin: 8px 0 0 0; color: #888; font-size: 14px;">We will respond within 3 working days.</p>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" style="background-color: #007bb7; color: white; border: none; padding: 12px 30px; border-radius: 6px; font-weight: bold; font-size: 16px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                Submit
+            </button>
+            
+        </form>
+        
+    </div>
+
+</body>
+</html> 
